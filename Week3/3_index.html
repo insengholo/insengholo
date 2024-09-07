@@ -22,7 +22,7 @@
         <li>
             <strong>{{ post['title'] }}</strong> - {{ post['content'] }} ({{ post['created_at'] }})
             <a href = "/edit/{{ post['id'] }}">수정</a> |
-            <a herf = "/delete/{{ post['id'] }}" onclick = "return confirm('삭제하시겠습니까?')">삭제</a>
+            <a href = "/delete/{{ post['id'] }}" onclick = "return confirm('삭제하시겠습니까?')">삭제</a>
         </li>
         {% endfor %}
     </ul>
