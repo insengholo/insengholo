@@ -27,6 +27,9 @@ def index():
     finally:
         connection.close()
 
+@app.route('/contact')
+def contact():
+    return redirect('/')
 
 @app.route('/add', methods = ['POST'])
 def add_post():
@@ -105,10 +108,5 @@ def search_posts():
     finally:
         connection.close()
 
-
-@app.route('/')
-def design():
-    return render_template('insengholo.html')
-
 if __name__ == '__main__':
-    app.run(debug = True)
+    app.run(debug=True)
